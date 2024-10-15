@@ -1,0 +1,19 @@
+package edu.pe.cibertec.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+import edu.pe.cibertec.service.UsuarioService;
+
+@Controller
+public class UsuarioController {
+	@Autowired
+	private UsuarioService servicio;
+	
+	public String listarUsuarios(Model modelo) {
+		modelo.addAttribute("usuarios", servicio.listarusuarios());
+		return "usuarios";
+	}
+	
+}

@@ -1,0 +1,8 @@
+package edu.pe.cibertec.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class UsuarioServiceImplement implements IUsuarioService{
+	
+}

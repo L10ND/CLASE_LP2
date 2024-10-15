@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>CRUD - USUARIO </title>
+    </head>
+    <body>
+		<div class="container">
+			<table>
+				<thead>
+					<tr>
+						<th>Código</th>
+						<th>Nombre</th>
+						<th>Apellidos</th>
+						<th>Email</th>
+						<th>Acción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<td th:text="${usuarios.codUsuario}"></td>
+					<td th:text="${usuarios.nomUsuario}"></td>
+					<td th:text="${usuarios.apeUsuario}"></td>
+					<td th:text="${usuarios.emaUsuario}"></td>
+					<td>
+						<a>Editar</a>
+						<a>Eliminar</a>
+					</td>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
